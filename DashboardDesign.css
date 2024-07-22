@@ -1,0 +1,125 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jun 7, 2024, 11:23:37 PM
+    Author     : USER
+*/
+.top-form{
+    -fx-background-color:#fff;
+    -fx-border-color:#000;
+    -fx-border-width:.2px .2px .5px .2px;
+}
+
+.semiTop-form{
+    -fx-border-color:#000;
+    -fx-border-width:0px 0px .5px 0px;
+}
+
+ .close{
+     -fx-background-color:transparent;
+     -fx-cursor:hand;
+     
+ }
+ 
+ .close:hover{
+     -fx-background-color:beige;
+ }
+ 
+ .minimize{
+     -fx-background-color:transparent;
+     -fx-cursor:hand;
+     
+ }
+ 
+ .minimize:hover{
+     -fx-background-color:aliceblue;
+ }
+ 
+ .top-btn{
+     -fx-background-color:gray;
+     -fx-background-radius:15px;
+     -fx-cursor:hand;
+     
+ }
+ 
+ .top-btn:hover{
+     -fx-background-color:red;
+ }
+ 
+ .circle{
+     -fx-radius:3cm;
+ }
+ 
+ .left-form{
+     -fx-background-color:#4470ae;
+ }
+ 
+ .centercuisine-btn{
+      -fx-background-color:transparent;
+      -fx-text-inner-color:BLACK;
+     -fx-border-width:0px 0px .4px 0px;
+     -fx-font-family: Berlin Sans fb;
+     -fx-background-radius:15px;
+     -fx-cursor:hand;
+ }
+ 
+ .centercuisine-btn:hover{
+     -fx-background-color:#040720;
+     -fx-color:#fff;
+ }
+ 
+ .centermealtime-btn{
+      -fx-background-color:transparent;
+      -fx-text-inner-color:BLACK;
+     -fx-border-width:0px 0px .4px 0px;
+     -fx-font-family: Berlin Sans fb;
+     -fx-background-radius:15px;
+     -fx-cursor:hand;
+ }
+ 
+ .centermealtime-btn:hover{
+     -fx-background-color:#040720;
+     -fx-color:#fff;
+ }
+ 
+ .center-form{
+     -fx-background-color:#DAF7A6;
+    -fx-background-radius:15px; }
+ 
+ .maincenter-page{
+    -fx-background-color:#040720;
+ }
+ 
+ .recipe-page{
+    -fx-background-color:#ffff00;
+ }
+ 
+ .display-page{
+    -fx-background-color:#ADD8E6;
+ }
+ 
+ .left-btn{
+      -fx-background-color:transparent;
+     -fx-text-inner-color:#fff;
+     -fx-border-color:#fff;
+     -fx-border-width:0px 0px .4px 0px;
+     -fx-font-size:15px;
+     -fx-font-family: Berlin Sans fb;
+     -fx-cursor:hand;
+ }
+ 
+ .centermealtime-btn:hover{
+     -fx-background-color:transparent;
+     -fx-color:#fff;
+ }
+ 
+ .image-btn{
+      -fx-background-color:transparent;
+      -fx-cursor:hand;
+ }
+ 
+ .ingredients-pane{
+     -fx-background-color:white
+ }

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="469.0" prefWidth="691.0" styleClass="login-form" stylesheets="@Login_design.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RecipeSystem.Form1Controller">
+   <children>
+      <AnchorPane fx:id="LoginPage" layoutX="102.0" layoutY="75.0" prefHeight="344.0" prefWidth="487.0" styleClass="card-form" stylesheets="@Login_design.css" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="102.0" AnchorPane.rightAnchor="102.0" AnchorPane.topAnchor="75.0">
+         <children>
+            <Button fx:id="login_Btn" layoutX="199.0" layoutY="255.0" mnemonicParsing="false" onAction="#login" onKeyPressed="#login" prefHeight="42.0" prefWidth="91.0" styleClass="login-btn" stylesheets="@Login_design.css" text="Login" AnchorPane.leftAnchor="198.0" AnchorPane.rightAnchor="198.0">
+               <font>
+                  <Font name="Berlin Sans FB" size="17.0" />
+               </font>
+            </Button>
+            <TextField fx:id="login_showPassword" layoutX="14.0" layoutY="207.0" prefHeight="25.0" prefWidth="180.0" styleClass="textfield" stylesheets="@Login_design.css" visible="false" AnchorPane.bottomAnchor="110.0" AnchorPane.leftAnchor="154.0" AnchorPane.rightAnchor="153.0" AnchorPane.topAnchor="205.0" />
+            <PasswordField fx:id="password" layoutX="159.0" layoutY="205.0" prefHeight="25.0" prefWidth="180.0" promptText="Password" styleClass="textfield" stylesheets="@Login_design.css" AnchorPane.bottomAnchor="110.0" AnchorPane.leftAnchor="154.0" AnchorPane.rightAnchor="153.0" AnchorPane.topAnchor="205.0" />
+            <TextField fx:id="Username" layoutX="154.0" layoutY="160.0" prefHeight="25.0" prefWidth="180.0" promptText="Username" stylesheets="@Login_design.css" AnchorPane.leftAnchor="154.0" AnchorPane.rightAnchor="153.0">
+               <styleClass>
+                  <String fx:value="textfield" />
+                  <String fx:value="focused" />
+               </styleClass></TextField>
+
+            <Label layoutX="204.0" layoutY="106.0" text="Login" textFill="#232f36">
+               <font>
+                  <Font name="Berlin Sans FB" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="111.0" layoutY="316.0" text="Don't have an account?" textFill="#393665">
+               <font>
+                  <Font name="Berlin Sans FB Bold" size="12.0" />
+               </font>
+            </Label>
+            <Hyperlink fx:id="Login_registerlink" layoutX="257.0" layoutY="313.0" onAction="#switchForm" text="Register Here!" textFill="#0e2428" />
+            <CheckBox fx:id="LoginCheck" layoutX="349.0" layoutY="220.0" mnemonicParsing="false" onAction="#loginShowPassword" text="show password" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="close" layoutX="484.0" layoutY="14.0" mnemonicParsing="false" onAction="#exit" onMouseClicked="#exit" prefHeight="27.0" prefWidth="55.0" styleClass="close" stylesheets="@Login_design.css" text="CLOSE" textFill="WHITE" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+         <graphic>
+            
+         </graphic>
+      </Button>
+      <Button fx:id="minimize" layoutX="562.0" layoutY="2.0" mnemonicParsing="false" onAction="#minimize" onMouseClicked="#minimize" prefHeight="27.0" prefWidth="55.0" styleClass="minimize" stylesheets="@Login_design.css" text="MIN" textAlignment="JUSTIFY" textFill="WHITE" AnchorPane.bottomAnchor="442.0" AnchorPane.rightAnchor="74.0" AnchorPane.topAnchor="2.0">
+         
+      </Button>
+      <AnchorPane fx:id="RegisterPage" layoutX="94.0" layoutY="75.0" prefHeight="344.0" prefWidth="487.0" styleClass="card-form" stylesheets="@Login_design.css" visible="false" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="102.0" AnchorPane.rightAnchor="102.0" AnchorPane.topAnchor="75.0">
+         <children>
+            <Button fx:id="Register_Btn1" layoutX="199.0" layoutY="255.0" mnemonicParsing="false" onAction="#registerAccount" onKeyPressed="#login" prefHeight="42.0" prefWidth="91.0" styleClass="login-btn" stylesheets="@Login_design.css" text="Sign up" AnchorPane.leftAnchor="198.0" AnchorPane.rightAnchor="198.0">
+               <font>
+                  <Font name="Berlin Sans FB" size="17.0" />
+               </font>
+            </Button>
+            <TextField fx:id="register_showPassword" layoutY="207.0" prefHeight="25.0" prefWidth="180.0" styleClass="textfield" stylesheets="@Login_design.css" visible="false" AnchorPane.bottomAnchor="110.0" AnchorPane.leftAnchor="154.0" AnchorPane.topAnchor="205.0" />
+            <PasswordField fx:id="RegisterPassword" layoutX="159.0" layoutY="205.0" prefHeight="25.0" prefWidth="180.0" promptText="Password" styleClass="textfield" stylesheets="@Login_design.css" AnchorPane.leftAnchor="154.0" AnchorPane.rightAnchor="153.0" AnchorPane.topAnchor="205.0" />
+            <TextField fx:id="RegisterName" layoutX="154.0" layoutY="160.0" prefHeight="25.0" prefWidth="180.0" promptText="Username" stylesheets="@Login_design.css" AnchorPane.leftAnchor="154.0" AnchorPane.rightAnchor="153.0">
+               <styleClass>
+                  <String fx:value="textfield" />
+                  <String fx:value="focused" />
+               </styleClass>
+            </TextField>
+            <Label layoutX="195.0" layoutY="76.0" text="Register" textFill="#232f36">
+               <font>
+                  <Font name="Berlin Sans FB" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="111.0" layoutY="316.0" text="Already have an account?" textFill="#393665">
+               <font>
+                  <Font name="Berlin Sans FB Bold" size="12.0" />
+               </font>
+            </Label>
+            <Hyperlink fx:id="Register_loginlink" layoutX="265.0" layoutY="312.0" onAction="#switchForm" text="Login Here!" textFill="#0e2428" />
+            <TextField fx:id="RegisterEmail" layoutX="124.0" layoutY="124.0" prefHeight="25.0" prefWidth="250.0" promptText="Email Adddress" styleClass="textfield" stylesheets="@Login_design.css" />
+            <CheckBox fx:id="RegisterCheck" layoutX="347.0" layoutY="220.0" mnemonicParsing="false" onAction="#registerShowPassword" text="show password" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
